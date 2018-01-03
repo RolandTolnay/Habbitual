@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2853D9FD87637D69EC7149FC /* Pods_Quable_ProductivityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D31A9F08CF0F143297FC68 /* Pods_Quable_ProductivityTests.framework */; };
+		5B978AAE12C95C4238039494 /* Pods_Quable_Productivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA185122AA2B1FABAB1503AB /* Pods_Quable_Productivity.framework */; };
 		AF003A291FFCDBF0007DF4F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF003A281FFCDBF0007DF4F0 /* AppDelegate.swift */; };
-		AF003A2B1FFCDBF0007DF4F0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF003A2A1FFCDBF0007DF4F0 /* FirstViewController.swift */; };
+		AF003A2B1FFCDBF0007DF4F0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF003A2A1FFCDBF0007DF4F0 /* TodayViewController.swift */; };
 		AF003A2D1FFCDBF0007DF4F0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF003A2C1FFCDBF0007DF4F0 /* SecondViewController.swift */; };
 		AF003A301FFCDBF0007DF4F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF003A2E1FFCDBF0007DF4F0 /* Main.storyboard */; };
 		AF003A321FFCDBF0007DF4F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF003A311FFCDBF0007DF4F0 /* Assets.xcassets */; };
@@ -27,9 +29,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45F841DED02BE5F711575972 /* Pods-Quable ProductivityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable ProductivityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quable ProductivityTests/Pods-Quable ProductivityTests.release.xcconfig"; sourceTree = "<group>"; };
+		633F03C3AA2843FE509533FA /* Pods-Quable Productivity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable Productivity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quable Productivity/Pods-Quable Productivity.release.xcconfig"; sourceTree = "<group>"; };
+		6D0D60236E3FBA47E04BDE29 /* Pods-Quable ProductivityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable ProductivityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quable ProductivityTests/Pods-Quable ProductivityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DB94634099B7D4331E3D91D /* Pods-Quable Productivity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable Productivity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quable Productivity/Pods-Quable Productivity.debug.xcconfig"; sourceTree = "<group>"; };
+		A7D31A9F08CF0F143297FC68 /* Pods_Quable_ProductivityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quable_ProductivityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF003A251FFCDBF0007DF4F0 /* Quable Productivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quable Productivity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF003A281FFCDBF0007DF4F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF003A2A1FFCDBF0007DF4F0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		AF003A2A1FFCDBF0007DF4F0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		AF003A2C1FFCDBF0007DF4F0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AF003A2F1FFCDBF0007DF4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF003A311FFCDBF0007DF4F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +45,7 @@
 		AF003A3B1FFCDBF0007DF4F0 /* Quable ProductivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quable ProductivityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF003A3F1FFCDBF0007DF4F0 /* Quable_ProductivityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quable_ProductivityTests.swift; sourceTree = "<group>"; };
 		AF003A411FFCDBF0007DF4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA185122AA2B1FABAB1503AB /* Pods_Quable_Productivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quable_Productivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B978AAE12C95C4238039494 /* Pods_Quable_Productivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2853D9FD87637D69EC7149FC /* Pods_Quable_ProductivityTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				AF003A271FFCDBF0007DF4F0 /* Quable Productivity */,
 				AF003A3E1FFCDBF0007DF4F0 /* Quable ProductivityTests */,
 				AF003A261FFCDBF0007DF4F0 /* Products */,
+				B4C088346A191DDF24FA67DB /* Pods */,
+				BE157D62E6F08064F3579618 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				AF003A281FFCDBF0007DF4F0 /* AppDelegate.swift */,
-				AF003A2A1FFCDBF0007DF4F0 /* FirstViewController.swift */,
+				AF003A2A1FFCDBF0007DF4F0 /* TodayViewController.swift */,
 				AF003A2C1FFCDBF0007DF4F0 /* SecondViewController.swift */,
 				AF003A2E1FFCDBF0007DF4F0 /* Main.storyboard */,
 				AF003A311FFCDBF0007DF4F0 /* Assets.xcassets */,
@@ -99,6 +111,26 @@
 			path = "Quable ProductivityTests";
 			sourceTree = "<group>";
 		};
+		B4C088346A191DDF24FA67DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DB94634099B7D4331E3D91D /* Pods-Quable Productivity.debug.xcconfig */,
+				633F03C3AA2843FE509533FA /* Pods-Quable Productivity.release.xcconfig */,
+				6D0D60236E3FBA47E04BDE29 /* Pods-Quable ProductivityTests.debug.xcconfig */,
+				45F841DED02BE5F711575972 /* Pods-Quable ProductivityTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE157D62E6F08064F3579618 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA185122AA2B1FABAB1503AB /* Pods_Quable_Productivity.framework */,
+				A7D31A9F08CF0F143297FC68 /* Pods_Quable_ProductivityTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF003A441FFCDBF0007DF4F0 /* Build configuration list for PBXNativeTarget "Quable Productivity" */;
 			buildPhases = (
+				9B5752AED542EBA2A423ED8F /* [CP] Check Pods Manifest.lock */,
 				AF003A211FFCDBF0007DF4F0 /* Sources */,
 				AF003A221FFCDBF0007DF4F0 /* Frameworks */,
 				AF003A231FFCDBF0007DF4F0 /* Resources */,
+				28BB48F9DD5AC0E1E8A47BE6 /* [CP] Embed Pods Frameworks */,
+				0A4D3A3DB76E047073C5C6B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF003A471FFCDBF0007DF4F0 /* Build configuration list for PBXNativeTarget "Quable ProductivityTests" */;
 			buildPhases = (
+				0BC5E51B132B7C8AD315965D /* [CP] Check Pods Manifest.lock */,
 				AF003A371FFCDBF0007DF4F0 /* Sources */,
 				AF003A381FFCDBF0007DF4F0 /* Frameworks */,
 				AF003A391FFCDBF0007DF4F0 /* Resources */,
+				97AC4DC9EF2A8501A3EFAAFA /* [CP] Embed Pods Frameworks */,
+				CDA48464305E3F637F120F53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +235,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A4D3A3DB76E047073C5C6B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quable Productivity/Pods-Quable Productivity-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0BC5E51B132B7C8AD315965D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quable ProductivityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28BB48F9DD5AC0E1E8A47BE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quable Productivity/Pods-Quable Productivity-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quable Productivity/Pods-Quable Productivity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97AC4DC9EF2A8501A3EFAAFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quable ProductivityTests/Pods-Quable ProductivityTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B5752AED542EBA2A423ED8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quable Productivity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDA48464305E3F637F120F53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quable ProductivityTests/Pods-Quable ProductivityTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF003A211FFCDBF0007DF4F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -204,7 +344,7 @@
 			files = (
 				AF003A2D1FFCDBF0007DF4F0 /* SecondViewController.swift in Sources */,
 				AF003A291FFCDBF0007DF4F0 /* AppDelegate.swift in Sources */,
-				AF003A2B1FFCDBF0007DF4F0 /* FirstViewController.swift in Sources */,
+				AF003A2B1FFCDBF0007DF4F0 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +495,7 @@
 		};
 		AF003A451FFCDBF0007DF4F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DB94634099B7D4331E3D91D /* Pods-Quable Productivity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -370,6 +511,7 @@
 		};
 		AF003A461FFCDBF0007DF4F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 633F03C3AA2843FE509533FA /* Pods-Quable Productivity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -385,6 +527,7 @@
 		};
 		AF003A481FFCDBF0007DF4F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0D60236E3FBA47E04BDE29 /* Pods-Quable ProductivityTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -402,6 +545,7 @@
 		};
 		AF003A491FFCDBF0007DF4F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45F841DED02BE5F711575972 /* Pods-Quable ProductivityTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

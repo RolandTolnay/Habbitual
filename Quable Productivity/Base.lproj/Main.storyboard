@@ -60,12 +60,97 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" id="527-Tt-24g">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xgV-a1-F7y"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xgV-a1-F7y">
+                            <connections>
+                                <segue destination="MLP-c4-Nuk" kind="presentation" id="5KU-QC-gWM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="xOp-Iw-rzw" id="due-Lh-8ea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1736.8" y="-324.28785607196403"/>
+            <point key="canvasLocation" x="1462" y="-333"/>
+        </scene>
+        <!--Create Task-->
+        <scene sceneID="m4Q-zw-Aa2">
+            <objects>
+                <viewController id="SPR-x2-K2p" customClass="CreateTaskViewController" customModule="Quable_Productivity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9lm-AN-49i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VE0-Ra-M6A">
+                                <rect key="frame" x="133.5" y="100" width="109" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8d-dE-hIX">
+                                <rect key="frame" x="138" y="240.5" width="100.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zIt-tM-jfq">
+                                <rect key="frame" x="16" y="142.5" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Yrw-Xq-4j9"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Gl-H2-ONf">
+                                <rect key="frame" x="0.0" y="267" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="SPR-x2-K2p" id="IAx-vb-kAN"/>
+                                    <outlet property="delegate" destination="SPR-x2-K2p" id="khd-RF-WoN"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohz-n4-Cas">
+                                <rect key="frame" x="152.5" y="519" width="69" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="onCreateTapped:" destination="SPR-x2-K2p" eventType="touchUpInside" id="Shs-eW-K5L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VE0-Ra-M6A" firstAttribute="top" secondItem="FOu-XN-mbC" secondAttribute="top" constant="36" id="04G-4a-15z"/>
+                            <constraint firstItem="h8d-dE-hIX" firstAttribute="centerX" secondItem="9lm-AN-49i" secondAttribute="centerX" id="0Cr-EW-82L"/>
+                            <constraint firstItem="h8d-dE-hIX" firstAttribute="top" secondItem="zIt-tM-jfq" secondAttribute="bottom" constant="54" id="9o8-nT-SAj"/>
+                            <constraint firstItem="zIt-tM-jfq" firstAttribute="leading" secondItem="FOu-XN-mbC" secondAttribute="leading" constant="16" id="BkW-uk-K21"/>
+                            <constraint firstItem="zIt-tM-jfq" firstAttribute="top" secondItem="VE0-Ra-M6A" secondAttribute="bottom" constant="16" id="Gmy-3j-Xmz"/>
+                            <constraint firstItem="4Gl-H2-ONf" firstAttribute="trailing" secondItem="FOu-XN-mbC" secondAttribute="trailing" id="I65-ja-FM6"/>
+                            <constraint firstItem="ohz-n4-Cas" firstAttribute="top" secondItem="4Gl-H2-ONf" secondAttribute="bottom" constant="36" id="MGz-54-7t8"/>
+                            <constraint firstItem="VE0-Ra-M6A" firstAttribute="centerX" secondItem="9lm-AN-49i" secondAttribute="centerX" id="Ues-v8-C4E"/>
+                            <constraint firstItem="ohz-n4-Cas" firstAttribute="centerX" secondItem="9lm-AN-49i" secondAttribute="centerX" id="h93-cc-nbr"/>
+                            <constraint firstItem="4Gl-H2-ONf" firstAttribute="leading" secondItem="FOu-XN-mbC" secondAttribute="leading" id="loS-aa-qqY"/>
+                            <constraint firstItem="FOu-XN-mbC" firstAttribute="trailing" secondItem="zIt-tM-jfq" secondAttribute="trailing" constant="16" id="ojo-kM-rxU"/>
+                            <constraint firstItem="4Gl-H2-ONf" firstAttribute="top" secondItem="h8d-dE-hIX" secondAttribute="bottom" id="vQk-xh-3vt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FOu-XN-mbC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Task" id="f2j-xP-KvR">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7fh-Pb-PaW">
+                            <connections>
+                                <action selector="onCancelTapped:" destination="SPR-x2-K2p" id="GIx-JC-Qq3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="zIt-tM-jfq" id="AQU-ZV-RSe"/>
+                        <outlet property="frequencyPickerView" destination="4Gl-H2-ONf" id="NxO-DA-D1K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yCl-O0-OJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2944.8000000000002" y="-334.18290854572717"/>
         </scene>
         <!--History-->
         <scene sceneID="wg7-f3-ORb">
@@ -139,7 +224,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cfi-OC-olr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818" y="-331"/>
+            <point key="canvasLocation" x="750" y="-333"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jSM-lt-0Vs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MLP-c4-Nuk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ftg-Zn-WC7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SPR-x2-K2p" kind="relationship" relationship="rootViewController" id="4zD-ow-hQQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXc-WC-jAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2203.1999999999998" y="-333.7331334332834"/>
         </scene>
     </scenes>
     <resources>

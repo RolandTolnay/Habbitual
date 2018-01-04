@@ -19,3 +19,5 @@ struct CompleteTaskAction: Action {
   
   var task: Task
 }
+
+struct UpdateTodaysTasksAction: Action { }

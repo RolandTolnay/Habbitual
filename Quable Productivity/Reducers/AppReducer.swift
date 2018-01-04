@@ -19,6 +19,8 @@ func appReducer(action: Action, state: AppState?) -> AppState {
       state.todaysTasks = generateTodaysTasks(from: state.tasks)
     case let completeAction as CompleteTaskAction:
         state = completeTaskReducer(action: completeAction, state: state)
+    case _ as UpdateTodaysTasksAction:
+      state = updateTasksReducer(state: state)
     default:
       break
   }
@@ -47,7 +49,8 @@ private func generateTodaysTasks(from tasks: [Task]) -> [Task] {
     }
   }
 
-  return dailyTasks + fewDaysTasks + weeklyTasks + otherTasks
+  let todaysTasks = dailyTasks + fewDaysTasks + weeklyTasks + otherTasks
+  return todaysTasks.sorted()
 }
 
 private func completeTaskReducer(action: CompleteTaskAction, state: AppState) -> AppState {
@@ -60,8 +63,21 @@ private func completeTaskReducer(action: CompleteTaskAction, state: AppState) ->
     }
   }
   state.todaysTasks = generateTodaysTasks(from: state.tasks)
-  state.todaysTasks.sort()
   state.history.append(action.task)
+  
+  return state
+}
+
+private func updateTasksReducer(state: AppState) -> AppState {
+  var state = state
+  
+  for i in 0..<state.tasks.count {
+    let task = state.tasks[i]
+    if task.status == .completed && task.createdAt.hasDayPassed() {
+      state.tasks[i].status = .pending
+    }
+  }
+  state.todaysTasks = generateTodaysTasks(from: state.tasks)
   
   return state
 }

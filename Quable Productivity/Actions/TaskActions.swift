@@ -14,3 +14,8 @@ struct CreateTaskAction: Action {
   var description: String
   var frequency: Frequency
 }
+
+struct CompleteTaskAction: Action {
+  
+  var task: Task
+}

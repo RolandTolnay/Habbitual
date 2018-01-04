@@ -11,13 +11,14 @@ import ReSwift
 
 func appReducer(action: Action, state: AppState?) -> AppState {
   var state = state ?? AppState()
-  
-  print("appReducer called")
+
   switch action {
     case let createAction as CreateTaskAction:
       let task = Task(name: createAction.description, frequency: createAction.frequency)
       state.tasks.append(task)
       state.todaysTasks = generateTodaysTasks(from: state.tasks)
+    case let completeAction as CompleteTaskAction:
+        state = completeTaskReducer(action: completeAction, state: state)
     default:
       break
   }
@@ -47,4 +48,20 @@ private func generateTodaysTasks(from tasks: [Task]) -> [Task] {
   }
 
   return dailyTasks + fewDaysTasks + weeklyTasks + otherTasks
+}
+
+private func completeTaskReducer(action: CompleteTaskAction, state: AppState) -> AppState {
+  var state = state
+  
+  for i in 0..<state.tasks.count {
+    if state.tasks[i] == action.task {
+      state.tasks[i].status = .completed
+      state.tasks[i].modifiedAt = Date()
+    }
+  }
+  state.todaysTasks = generateTodaysTasks(from: state.tasks)
+  state.todaysTasks.sort()
+  state.history.append(action.task)
+  
+  return state
 }

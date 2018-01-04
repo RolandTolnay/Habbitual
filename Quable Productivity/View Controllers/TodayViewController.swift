@@ -74,6 +74,14 @@ extension TodayViewController: UITableViewDataSource {
 extension TodayViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let task = tasks[indexPath.row]
     
+    if (task.status == .pending) {
+      mainStore.dispatch(
+        CompleteTaskAction(task: task)
+      )
+    }
+    
+    tableView.deselectRow(at: indexPath, animated: true)
   }
 }

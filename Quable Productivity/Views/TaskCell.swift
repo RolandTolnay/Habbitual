@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class TaskCell: UITableViewCell {
   
@@ -21,6 +22,13 @@ class TaskCell: UITableViewCell {
   }
   
   func setupWith(description: String, status: TaskStatus = .pending) {
+    switch status {
+      case .pending:
+        self.backgroundColor = UIColor.flatSand
+      case .completed:
+        self.backgroundColor = UIColor.flatMintDark
+    }
+    
     descriptionLabel.text = description
   }
 }

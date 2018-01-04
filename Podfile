@@ -7,6 +7,7 @@ target 'Quable Productivity' do
 
   # Pods for Quable Productivity
   pod 'ReSwift'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 
   target 'Quable ProductivityTests' do
     inherit! :search_paths

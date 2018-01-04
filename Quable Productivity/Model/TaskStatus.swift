@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum TaskStatus {
+enum TaskStatus: Int, Codable {
   
   case pending
   case completed

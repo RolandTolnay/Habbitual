@@ -34,7 +34,6 @@ class TodayViewController: UIViewController, StoreSubscriber {
   }
   
   func newState(state: AppState) {
-    print("TodayViewController:newState. Task count: \(state.todaysTasks)")
     tasks = state.todaysTasks
     tableView.reloadData()
   }

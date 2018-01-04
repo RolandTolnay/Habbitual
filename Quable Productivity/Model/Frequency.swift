@@ -8,26 +8,11 @@
 
 import Foundation
 
-enum Frequency {
+enum Frequency: String, Codable {
   
-  case daily
-  case fewDays
-  case weekly
-  case sometime
-  case abstinance
-  
-  func toString() -> String {
-    switch self {
-      case .daily:
-        return "Every day"
-      case .fewDays:
-        return "Every few days"
-      case .weekly:
-        return "Weekly"
-      case .sometime:
-        return "Sometime"
-      case .abstinance:
-        return "Abstinance chain"
-    }
-  }
+  case daily = "Every day"
+  case fewDays = "Every few days"
+  case weekly = "Weekly"
+  case sometime = "Sometime"
+  case abstinance = "Abstinance chain"
 }

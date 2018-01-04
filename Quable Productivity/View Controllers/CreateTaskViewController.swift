@@ -23,7 +23,7 @@ class CreateTaskViewController: UIViewController, UIPickerViewDataSource, UIPick
   }
   
   @IBAction func onCreateTapped(_ sender: UIButton) {
-    if let description = descriptionTextField.text {
+    if let description = descriptionTextField.text, !description.isEmpty {
       let frequency = frequencyDataSource[frequencyPickerView.selectedRow(inComponent: 0)]
       mainStore.dispatch(
         CreateTaskAction(description: description, frequency: frequency)
@@ -47,7 +47,7 @@ class CreateTaskViewController: UIViewController, UIPickerViewDataSource, UIPick
   }
   
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return frequencyDataSource[row].toString()
+    return frequencyDataSource[row].rawValue
   }
 }
 

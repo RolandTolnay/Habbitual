@@ -14,6 +14,7 @@ class TaskCell: UITableViewCell {
   @IBOutlet weak var descriptionLabel: UILabel!
   @IBOutlet weak var labelToTopConstraint: NSLayoutConstraint!
   @IBOutlet weak var labelToBottomConstraint: NSLayoutConstraint!
+  @IBOutlet weak var textStrikethrough: UIView!
   
   static var nib: UINib {
     return UINib(nibName: String(describing: self), bundle: nil)
@@ -27,9 +28,11 @@ class TaskCell: UITableViewCell {
     if status == .completed {
       self.backgroundColor = UIColor.flatGreenDark
       descriptionLabel.font = UIFont(name: descriptionLabel.font.fontName, size: 16)
+      textStrikethrough.isHidden = false
       labelToTopConstraint.constant = 5
       labelToBottomConstraint.constant = 5
     } else {
+      textStrikethrough.isHidden = true
       switch frequency {
         case .daily:
           self.backgroundColor = UIColor.flatOrange

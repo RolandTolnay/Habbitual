@@ -30,10 +30,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xW-In-gQu">
+                        <rect key="frame" x="28" y="44.5" width="56.5" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Xfm-vZ-acK"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="8Ag-Sl-BED" firstAttribute="leading" secondItem="ilA-6P-zcn" secondAttribute="leadingMargin" constant="12" id="BzH-d5-Lwx"/>
                     <constraint firstAttribute="bottomMargin" secondItem="8Ag-Sl-BED" secondAttribute="bottom" priority="999" constant="19.5" id="Eme-cL-ucg"/>
+                    <constraint firstItem="2xW-In-gQu" firstAttribute="leading" secondItem="8Ag-Sl-BED" secondAttribute="leading" id="Iv3-ev-qOO"/>
+                    <constraint firstItem="2xW-In-gQu" firstAttribute="width" secondItem="8Ag-Sl-BED" secondAttribute="width" id="T85-eM-uOL"/>
+                    <constraint firstItem="2xW-In-gQu" firstAttribute="centerY" secondItem="8Ag-Sl-BED" secondAttribute="centerY" id="Tvw-Az-F7U"/>
                     <constraint firstItem="8Ag-Sl-BED" firstAttribute="top" secondItem="ilA-6P-zcn" secondAttribute="topMargin" priority="999" constant="19.5" id="u66-n6-did"/>
                 </constraints>
             </tableViewCellContentView>
@@ -41,6 +51,7 @@
                 <outlet property="descriptionLabel" destination="8Ag-Sl-BED" id="XSZ-mF-qQt"/>
                 <outlet property="labelToBottomConstraint" destination="Eme-cL-ucg" id="ord-yQ-MBu"/>
                 <outlet property="labelToTopConstraint" destination="u66-n6-did" id="c5D-5B-jaA"/>
+                <outlet property="textStrikethrough" destination="2xW-In-gQu" id="epV-ya-hRP"/>
             </connections>
             <point key="canvasLocation" x="-11" y="4"/>
         </tableViewCell>

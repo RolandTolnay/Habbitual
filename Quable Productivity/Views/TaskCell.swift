@@ -23,7 +23,7 @@ class TaskCell: UITableViewCell {
     return String(describing: self)
   }
   
-  func setupWith(description: String, frequency: Frequency, status: TaskStatus = .pending) {
+  func setupWith(description: String, frequency: Frequency, status: TaskStatus = .history) {
     if status == .completed {
       self.backgroundColor = UIColor.flatGreenDark
       descriptionLabel.font = UIFont(name: descriptionLabel.font.fontName, size: 16)
@@ -42,9 +42,15 @@ class TaskCell: UITableViewCell {
         case .abstinance:
           self.backgroundColor = UIColor.flatWatermelon
       }
-      labelToTopConstraint.constant = 19.5
-      labelToBottomConstraint.constant = 19.5
-      descriptionLabel.font = UIFont(name: descriptionLabel.font.fontName, size: 24)
+      if status == .pending {
+        labelToTopConstraint.constant = 19.5
+        labelToBottomConstraint.constant = 19.5
+        descriptionLabel.font = UIFont(name: descriptionLabel.font.fontName, size: 24)
+      } else if status == .history {
+        labelToTopConstraint.constant = 12
+        labelToBottomConstraint.constant = 12
+        descriptionLabel.font = UIFont(name: descriptionLabel.font.fontName, size: 20)
+      }
     }
     
     descriptionLabel.text = description

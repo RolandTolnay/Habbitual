@@ -12,4 +12,5 @@ enum TaskStatus: Int, Codable {
   
   case pending
   case completed
+  case history
 }

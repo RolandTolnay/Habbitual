@@ -11,7 +11,7 @@
 		5B978AAE12C95C4238039494 /* Pods_Quable_Productivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA185122AA2B1FABAB1503AB /* Pods_Quable_Productivity.framework */; };
 		AF003A291FFCDBF0007DF4F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF003A281FFCDBF0007DF4F0 /* AppDelegate.swift */; };
 		AF003A2B1FFCDBF0007DF4F0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF003A2A1FFCDBF0007DF4F0 /* TodayViewController.swift */; };
-		AF003A2D1FFCDBF0007DF4F0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF003A2C1FFCDBF0007DF4F0 /* SecondViewController.swift */; };
+		AF003A2D1FFCDBF0007DF4F0 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF003A2C1FFCDBF0007DF4F0 /* HistoryViewController.swift */; };
 		AF003A301FFCDBF0007DF4F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF003A2E1FFCDBF0007DF4F0 /* Main.storyboard */; };
 		AF003A321FFCDBF0007DF4F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF003A311FFCDBF0007DF4F0 /* Assets.xcassets */; };
 		AF003A351FFCDBF0007DF4F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF003A331FFCDBF0007DF4F0 /* LaunchScreen.storyboard */; };
@@ -55,7 +55,7 @@
 		AF003A251FFCDBF0007DF4F0 /* Quable Productivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quable Productivity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF003A281FFCDBF0007DF4F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF003A2A1FFCDBF0007DF4F0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		AF003A2C1FFCDBF0007DF4F0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AF003A2C1FFCDBF0007DF4F0 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		AF003A2F1FFCDBF0007DF4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF003A311FFCDBF0007DF4F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF003A341FFCDBF0007DF4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				AF003A2A1FFCDBF0007DF4F0 /* TodayViewController.swift */,
-				AF003A2C1FFCDBF0007DF4F0 /* SecondViewController.swift */,
+				AF003A2C1FFCDBF0007DF4F0 /* HistoryViewController.swift */,
 				AF003A581FFCFE06007DF4F0 /* CreateTaskViewController.swift */,
 			);
 			path = "View Controllers";
@@ -435,7 +435,7 @@
 				AF003A501FFCE1CE007DF4F0 /* Task.swift in Sources */,
 				AF003A531FFCE430007DF4F0 /* Frequency.swift in Sources */,
 				AF003A5F1FFD0DCD007DF4F0 /* AppReducer.swift in Sources */,
-				AF003A2D1FFCDBF0007DF4F0 /* SecondViewController.swift in Sources */,
+				AF003A2D1FFCDBF0007DF4F0 /* HistoryViewController.swift in Sources */,
 				AF003A291FFCDBF0007DF4F0 /* AppDelegate.swift in Sources */,
 				AF003A2B1FFCDBF0007DF4F0 /* TodayViewController.swift in Sources */,
 				AF8B1AEB1FFE5D5800B229E9 /* Date.swift in Sources */,

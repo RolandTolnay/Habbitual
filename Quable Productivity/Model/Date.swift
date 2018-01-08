@@ -18,4 +18,8 @@ extension Date {
 
     return components.day! < 0
   }
+  
+  var startOfDay: Date {
+    return Calendar.current.startOfDay(for: self)
+  }
 }

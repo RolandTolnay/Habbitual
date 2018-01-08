@@ -83,14 +83,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VE0-Ra-M6A">
-                                <rect key="frame" x="133.5" y="100" width="109" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <rect key="frame" x="128.5" y="100" width="119.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8d-dE-hIX">
-                                <rect key="frame" x="138" y="240.5" width="100.5" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <rect key="frame" x="133" y="210.5" width="110" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -103,36 +103,53 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Gl-H2-ONf">
-                                <rect key="frame" x="0.0" y="267" width="375" height="216"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="SPR-x2-K2p" id="IAx-vb-kAN"/>
-                                    <outlet property="delegate" destination="SPR-x2-K2p" id="khd-RF-WoN"/>
-                                </connections>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohz-n4-Cas">
-                                <rect key="frame" x="152.5" y="519" width="69" height="41"/>
+                                <rect key="frame" x="152.5" y="357" width="69" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
                                     <action selector="onCreateTapped:" destination="SPR-x2-K2p" eventType="touchUpInside" id="Shs-eW-K5L"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQw-db-nbE">
+                                <rect key="frame" x="49" y="245" width="277" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="qJe-Yb-qwi"/>
+                                </constraints>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftArrow" translatesAutoresizingMaskIntoConstraints="NO" id="hgP-6v-TVa">
+                                <rect key="frame" x="8" y="272.5" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="gA8-9G-vmg"/>
+                                    <constraint firstAttribute="height" constant="33" id="ljp-Ov-lJn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="g0P-0e-KTH">
+                                <rect key="frame" x="334" y="272.5" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="USe-Uc-zv4"/>
+                                    <constraint firstAttribute="height" constant="33" id="vS6-fL-qWW"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VE0-Ra-M6A" firstAttribute="top" secondItem="FOu-XN-mbC" secondAttribute="top" constant="36" id="04G-4a-15z"/>
                             <constraint firstItem="h8d-dE-hIX" firstAttribute="centerX" secondItem="9lm-AN-49i" secondAttribute="centerX" id="0Cr-EW-82L"/>
-                            <constraint firstItem="h8d-dE-hIX" firstAttribute="top" secondItem="zIt-tM-jfq" secondAttribute="bottom" constant="54" id="9o8-nT-SAj"/>
+                            <constraint firstItem="g0P-0e-KTH" firstAttribute="centerY" secondItem="CQw-db-nbE" secondAttribute="centerY" id="4RE-gD-Ejh"/>
+                            <constraint firstItem="h8d-dE-hIX" firstAttribute="top" secondItem="zIt-tM-jfq" secondAttribute="bottom" constant="24" id="9o8-nT-SAj"/>
                             <constraint firstItem="zIt-tM-jfq" firstAttribute="leading" secondItem="FOu-XN-mbC" secondAttribute="leading" constant="16" id="BkW-uk-K21"/>
+                            <constraint firstItem="g0P-0e-KTH" firstAttribute="leading" secondItem="CQw-db-nbE" secondAttribute="trailing" constant="8" id="G9N-aO-kvG"/>
+                            <constraint firstItem="FOu-XN-mbC" firstAttribute="trailing" secondItem="g0P-0e-KTH" secondAttribute="trailing" constant="8" id="GGD-X3-tMf"/>
                             <constraint firstItem="zIt-tM-jfq" firstAttribute="top" secondItem="VE0-Ra-M6A" secondAttribute="bottom" constant="16" id="Gmy-3j-Xmz"/>
-                            <constraint firstItem="4Gl-H2-ONf" firstAttribute="trailing" secondItem="FOu-XN-mbC" secondAttribute="trailing" id="I65-ja-FM6"/>
-                            <constraint firstItem="ohz-n4-Cas" firstAttribute="top" secondItem="4Gl-H2-ONf" secondAttribute="bottom" constant="36" id="MGz-54-7t8"/>
+                            <constraint firstItem="hgP-6v-TVa" firstAttribute="leading" secondItem="FOu-XN-mbC" secondAttribute="leading" constant="8" id="Jhq-9L-iFN"/>
+                            <constraint firstItem="hgP-6v-TVa" firstAttribute="centerY" secondItem="CQw-db-nbE" secondAttribute="centerY" id="JtU-DF-rbS"/>
+                            <constraint firstItem="ohz-n4-Cas" firstAttribute="top" secondItem="CQw-db-nbE" secondAttribute="bottom" constant="24" id="N1R-ZQ-dEH"/>
                             <constraint firstItem="VE0-Ra-M6A" firstAttribute="centerX" secondItem="9lm-AN-49i" secondAttribute="centerX" id="Ues-v8-C4E"/>
                             <constraint firstItem="ohz-n4-Cas" firstAttribute="centerX" secondItem="9lm-AN-49i" secondAttribute="centerX" id="h93-cc-nbr"/>
-                            <constraint firstItem="4Gl-H2-ONf" firstAttribute="leading" secondItem="FOu-XN-mbC" secondAttribute="leading" id="loS-aa-qqY"/>
+                            <constraint firstItem="CQw-db-nbE" firstAttribute="top" secondItem="h8d-dE-hIX" secondAttribute="bottom" constant="8" id="iZR-F9-gh0"/>
+                            <constraint firstItem="CQw-db-nbE" firstAttribute="leading" secondItem="hgP-6v-TVa" secondAttribute="trailing" constant="8" id="lmd-vy-W0L"/>
                             <constraint firstItem="FOu-XN-mbC" firstAttribute="trailing" secondItem="zIt-tM-jfq" secondAttribute="trailing" constant="16" id="ojo-kM-rxU"/>
-                            <constraint firstItem="4Gl-H2-ONf" firstAttribute="top" secondItem="h8d-dE-hIX" secondAttribute="bottom" id="vQk-xh-3vt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FOu-XN-mbC"/>
                     </view>
@@ -145,7 +162,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="zIt-tM-jfq" id="AQU-ZV-RSe"/>
-                        <outlet property="frequencyPickerView" destination="4Gl-H2-ONf" id="NxO-DA-D1K"/>
+                        <outlet property="frequencyScrollView" destination="CQw-db-nbE" id="pON-am-Nh9"/>
+                        <outlet property="leftArrowImageView" destination="hgP-6v-TVa" id="Izl-gf-bT1"/>
+                        <outlet property="rightArrowImageView" destination="g0P-0e-KTH" id="6sM-dy-NeB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCl-O0-OJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -247,6 +266,8 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="leftArrow" width="66" height="66"/>
+        <image name="rightArrow" width="66" height="66"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

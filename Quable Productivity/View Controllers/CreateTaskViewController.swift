@@ -9,22 +9,55 @@
 import Foundation
 import UIKit
 
-class CreateTaskViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class CreateTaskViewController: UIViewController {
   
+  @IBOutlet weak var frequencyScrollView: UIScrollView!
   @IBOutlet weak var descriptionTextField: UITextField!
-  @IBOutlet weak var frequencyPickerView: UIPickerView!
+  @IBOutlet weak var leftArrowImageView: UIImageView!
+  @IBOutlet weak var rightArrowImageView: UIImageView!
   
   private let frequencyDataSource: [Frequency] = [.daily, .fewDays, .weekly, .sometime, .abstinance]
+  private var selectedFrequencyIndex: Int {
+    let pageWidth = frequencyScrollView.frame.width
+    return Int(floor((frequencyScrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
     
+    setupFrequencyScrollView()
+    descriptionTextField.becomeFirstResponder()
+  }
+  
+  private func setupFrequencyScrollView() {
+    let scrollViewWidth = frequencyScrollView.frame.width
+    let scrollViewHeight = frequencyScrollView.frame.height
+    frequencyScrollView.frame = CGRect(x: frequencyScrollView.frame.origin.x,
+                                       y: frequencyScrollView.frame.origin.y,
+                                       width: scrollViewWidth,
+                                       height: scrollViewHeight)
+    
+    for i in 0..<frequencyDataSource.count {
+      let label = UILabel(frame: CGRect(x: CGFloat(i) * scrollViewWidth,
+                                              y: 22, // distance to top of scrollview
+                                              width: scrollViewWidth,
+                                              height: 44))
+      label.text = frequencyDataSource[i].rawValue
+      label.textAlignment = .center
+      label.font = UIFont(name: label.font!.fontName, size: 18)
+      
+      frequencyScrollView.addSubview(label)
+    }
+    
+    frequencyScrollView.contentSize = CGSize(width: scrollViewWidth * CGFloat(frequencyDataSource.count),
+                                             height: scrollViewHeight)
+    frequencyScrollView.delegate = self
+    leftArrowImageView.isHidden = true
   }
   
   @IBAction func onCreateTapped(_ sender: UIButton) {
     if let description = descriptionTextField.text, !description.isEmpty {
-      let frequency = frequencyDataSource[frequencyPickerView.selectedRow(inComponent: 0)]
+      let frequency = frequencyDataSource[selectedFrequencyIndex]
       mainStore.dispatch(
         CreateTaskAction(description: description, frequency: frequency)
       )
@@ -36,18 +69,13 @@ class CreateTaskViewController: UIViewController, UIPickerViewDataSource, UIPick
     dismiss(animated: true, completion: nil)
   }
   
-  // MARK:- UIPickerViewDataSource
+}
+
+extension CreateTaskViewController: UIScrollViewDelegate {
   
-  func numberOfComponents(in pickerView: UIPickerView) -> Int {
-    return 1
-  }
-  
-  func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-    return frequencyDataSource.count
-  }
-  
-  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return frequencyDataSource[row].rawValue
+  func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    leftArrowImageView.isHidden = selectedFrequencyIndex == 0
+    rightArrowImageView.isHidden = selectedFrequencyIndex == frequencyDataSource.count - 1
   }
 }
 

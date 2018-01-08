@@ -61,7 +61,7 @@ extension TodayViewController: UITableViewDataSource {
     let cell = tableView.dequeueReusableCell(withIdentifier: TaskCell.reuseIdentifier, for: indexPath) as! TaskCell
     let task = tasks[indexPath.row]
     
-    cell.setupWith(description: task.name, status: task.status)
+    cell.setupWith(description: task.name, frequency: task.frequency, status: task.status)
     
     return cell
   }

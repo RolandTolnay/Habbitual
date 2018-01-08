@@ -21,12 +21,22 @@ class TaskCell: UITableViewCell {
     return String(describing: self)
   }
   
-  func setupWith(description: String, status: TaskStatus = .pending) {
-    switch status {
-      case .pending:
-        self.backgroundColor = UIColor.flatSand
-      case .completed:
-        self.backgroundColor = UIColor.flatMintDark
+  func setupWith(description: String, frequency: Frequency, status: TaskStatus = .pending) {
+    if status == .completed {
+       self.backgroundColor = UIColor.flatGreenDark
+    } else {
+      switch frequency {
+        case .daily:
+          self.backgroundColor = UIColor.flatOrange
+        case .fewDays:
+          self.backgroundColor = UIColor.flatYellowDark
+        case .weekly:
+          self.backgroundColor = UIColor.flatSandDark
+        case .sometime:
+          self.backgroundColor = UIColor.flatWhite
+        case .abstinance:
+          self.backgroundColor = UIColor.flatWatermelon
+      }
     }
     
     descriptionLabel.text = description

@@ -75,9 +75,13 @@ extension TodayViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let task = tasks[indexPath.row]
     
-    if (task.status == .pending) {
+    if task.status == .pending {
       mainStore.dispatch(
         CompleteTaskAction(task: task)
+      )
+    } else if task.status == .completed {
+      mainStore.dispatch(
+        UncompleteTaskAction(task: task)
       )
     }
     

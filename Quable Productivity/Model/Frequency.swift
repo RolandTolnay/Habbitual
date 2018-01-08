@@ -8,11 +8,26 @@
 
 import Foundation
 
-enum Frequency: String, Codable {
+enum Frequency: Int, Codable {
   
-  case daily = "Every day"
-  case fewDays = "Every few days"
-  case weekly = "Weekly"
-  case sometime = "Sometime"
-  case abstinance = "Abstinance chain"
+  case daily = 0
+  case fewDays = 1
+  case weekly = 2
+  case sometime = 3
+  case abstinance = 4
+  
+  var stringValue: String {
+    switch self {
+      case .daily:
+        return "Every day"
+      case .fewDays:
+        return "Every few days"
+      case .weekly:
+        return "Weekly"
+      case .sometime:
+        return "Sometime"
+      case .abstinance:
+        return "Abstinance chain"
+    }
+  }
 }

@@ -9,6 +9,9 @@
 import Foundation
 import ReSwift
 
+// MARK: -
+// MARK: CRUD
+// --------------------
 struct CreateTaskAction: Action {
   
   var description: String
@@ -20,9 +23,22 @@ struct DeleteTaskAction: Action {
   var task: Task
 }
 
-struct CompleteTaskAction: Action {
+struct UpdateTodaysTasksAction: Action { }
+
+// MARK: -
+// MARK: Task status
+// --------------------
+protocol ChangeTaskStatusAction: Action {
+  
+  var task: Task { get set }
+}
+
+struct CompleteTaskAction: ChangeTaskStatusAction {
   
   var task: Task
 }
 
-struct UpdateTodaysTasksAction: Action { }
+struct UncompleteTaskAction: ChangeTaskStatusAction {
+  
+  var task: Task
+}

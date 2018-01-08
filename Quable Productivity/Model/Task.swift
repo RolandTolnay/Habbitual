@@ -41,7 +41,11 @@ func ==(lhs: Task, rhs: Task) -> Bool {
 extension Task: Comparable {
   
   static func < (lhs: Task, rhs: Task) -> Bool {
-    if (lhs.status == rhs.status) {
+    if lhs.status == rhs.status {
+      if lhs.status == .pending {
+        return lhs.frequency.rawValue < rhs.frequency.rawValue
+      }
+      
       guard let lhsModified = lhs.modifiedAt else { return false }
       guard let rhsModified = rhs.modifiedAt else { return true }
       

@@ -42,7 +42,7 @@ class CreateTaskViewController: UIViewController {
                                               y: 22, // distance to top of scrollview
                                               width: scrollViewWidth,
                                               height: 44))
-      label.text = frequencyDataSource[i].rawValue
+      label.text = frequencyDataSource[i].stringValue
       label.textAlignment = .center
       label.font = UIFont(name: label.font!.fontName, size: 18)
       

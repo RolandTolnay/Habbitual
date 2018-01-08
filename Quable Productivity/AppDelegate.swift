@@ -20,7 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    
+    let appFont = UIFont(name: "Optima", size: 20)
+    if let appFont = appFont {
+      UINavigationBar.appearance().titleTextAttributes = [
+        NSAttributedStringKey.font: appFont
+      ]
+      UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: appFont], for: .normal)
+    }
+   
     return true
   }
 

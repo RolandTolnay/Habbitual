@@ -44,7 +44,7 @@ class CreateTaskViewController: UIViewController {
                                               height: 44))
       label.text = frequencyDataSource[i].stringValue
       label.textAlignment = .center
-      label.font = UIFont(name: label.font!.fontName, size: 18)
+      label.font = UIFont(name: "Optima", size: 18)
       
       frequencyScrollView.addSubview(label)
     }

@@ -6,11 +6,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Today View Controller-->
+        <!--Today's Tasks-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="TodayViewController" customModule="Quable_Productivity" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,17 +19,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="112.5" y="312" width="150.5" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="90.5" y="363" width="194.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tasks for today." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBL-31-tAf">
+                                <rect key="frame" x="0.0" y="317" width="375" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xOp-Iw-rzw">
@@ -48,18 +42,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="kBL-31-tAf" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="2QO-LH-T12"/>
                             <constraint firstItem="xOp-Iw-rzw" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="IrE-bk-aHn"/>
                             <constraint firstItem="xOp-Iw-rzw" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="KKd-f9-Zo7"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="xOp-Iw-rzw" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="dXc-px-jC3"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="kBL-31-tAf" secondAttribute="trailing" id="fBa-Xr-wGs"/>
+                            <constraint firstItem="kBL-31-tAf" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="jyj-W2-Sgk"/>
                             <constraint firstItem="xOp-Iw-rzw" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="vaa-95-VaE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" id="527-Tt-24g">
+                    <navigationItem key="navigationItem" title="Today's Tasks" id="527-Tt-24g">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xgV-a1-F7y">
                             <connections>
                                 <segue destination="MLP-c4-Nuk" kind="presentation" id="5KU-QC-gWM"/>
@@ -179,6 +172,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete tasks to add them to history." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGy-Rp-lvj">
+                                <rect key="frame" x="16" y="305" width="343" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DZD-96-n5c">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,7 +196,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DZD-96-n5c" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="4qm-uY-WG3"/>
+                            <constraint firstItem="vGy-Rp-lvj" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="I1s-2Y-0tz"/>
                             <constraint firstItem="DZD-96-n5c" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="RXY-gS-pUo"/>
+                            <constraint firstItem="vGy-Rp-lvj" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="fF2-oU-gr4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vGy-Rp-lvj" secondAttribute="trailing" id="flq-dX-Ydz"/>
                             <constraint firstItem="DZD-96-n5c" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="kvv-SA-OgH"/>
                             <constraint firstItem="DZD-96-n5c" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="yCQ-Pl-0YM"/>
                         </constraints>

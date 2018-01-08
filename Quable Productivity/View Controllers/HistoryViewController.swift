@@ -35,7 +35,12 @@ class HistoryViewController: UIViewController, StoreSubscriber {
   
   func newState(state: AppState) {
     taskSections = sectionsFrom(tasks: state.history)
-    tableView.reloadData()
+    if taskSections.isEmpty {
+      tableView.isHidden = true
+    } else {
+      tableView.isHidden = false
+      tableView.reloadData()
+    }
   }
 
   private func setupTableView() {

@@ -35,7 +35,12 @@ class TodayViewController: UIViewController, StoreSubscriber {
   
   func newState(state: AppState) {
     tasks = state.todaysTasks
-    tableView.reloadData()
+    if tasks.isEmpty {
+      tableView.isHidden = true
+    } else {
+      tableView.isHidden = false
+      tableView.reloadData()
+    }
   }
   
   private func setupTableView() {

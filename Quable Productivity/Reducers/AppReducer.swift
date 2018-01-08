@@ -23,6 +23,8 @@ func appReducer(action: Action, state: AppState?) -> AppState {
         state = completeTaskReducer(action: completeAction, state: state)
     case _ as UpdateTodaysTasksAction:
       state = updateTasksReducer(state: state)
+    case let deleteAction as DeleteTaskAction:
+      state = deleteTaskReducer(action: deleteAction, state: state)
     default:
       break
   }
@@ -66,6 +68,20 @@ private func completeTaskReducer(action: CompleteTaskAction, state: AppState) ->
   }
   state.todaysTasks = generateTodaysTasks(from: state.tasks)
   state.history.append(action.task)
+  
+  return state
+}
+
+private func deleteTaskReducer(action: DeleteTaskAction, state: AppState) -> AppState {
+  var state = state
+  
+  for i in 0..<state.tasks.count {
+    if state.tasks[i] == action.task {
+      state.tasks.remove(at: i)
+      break
+    }
+  }
+  state.todaysTasks = generateTodaysTasks(from: state.tasks)
   
   return state
 }

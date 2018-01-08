@@ -15,6 +15,11 @@ struct CreateTaskAction: Action {
   var frequency: Frequency
 }
 
+struct DeleteTaskAction: Action {
+  
+  var task: Task
+}
+
 struct CompleteTaskAction: Action {
   
   var task: Task

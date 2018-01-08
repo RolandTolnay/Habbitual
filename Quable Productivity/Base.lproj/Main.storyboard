@@ -117,19 +117,27 @@
                                     <constraint firstAttribute="height" constant="88" id="qJe-Yb-qwi"/>
                                 </constraints>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftArrow" translatesAutoresizingMaskIntoConstraints="NO" id="hgP-6v-TVa">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftArrow" translatesAutoresizingMaskIntoConstraints="NO" id="hgP-6v-TVa">
                                 <rect key="frame" x="8" y="272.5" width="33" height="33"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="gA8-9G-vmg"/>
                                     <constraint firstAttribute="height" constant="33" id="ljp-Ov-lJn"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="c4k-VK-rh4" appends="YES" id="QMZ-Lf-pkx"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="g0P-0e-KTH">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="g0P-0e-KTH">
                                 <rect key="frame" x="334" y="272.5" width="33" height="33"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="USe-Uc-zv4"/>
                                     <constraint firstAttribute="height" constant="33" id="vS6-fL-qWW"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8cT-IC-UjY" appends="YES" id="7vE-bm-xlx"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -168,6 +176,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCl-O0-OJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="c4k-VK-rh4">
+                    <connections>
+                        <action selector="onLeftArrowTapped:" destination="SPR-x2-K2p" id="Ksd-eY-e3i"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8cT-IC-UjY">
+                    <connections>
+                        <action selector="onRightArrowTapped:" destination="SPR-x2-K2p" id="FLc-hE-cih"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2944.8000000000002" y="-334.18290854572717"/>
         </scene>

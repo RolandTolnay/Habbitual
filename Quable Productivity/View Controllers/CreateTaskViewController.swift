@@ -55,6 +55,25 @@ class CreateTaskViewController: UIViewController {
     leftArrowImageView.isHidden = true
   }
   
+  @IBAction func onLeftArrowTapped(_ sender: UITapGestureRecognizer) {
+    guard selectedFrequencyIndex > 0 else { return }
+    
+    let pageToShow = selectedFrequencyIndex - 1
+    scrollToFrequency(page: pageToShow)
+  }
+  
+  @IBAction func onRightArrowTapped(_ sender: Any) {
+    guard selectedFrequencyIndex < frequencyDataSource.count - 1 else { return }
+    
+    let pageToShow = selectedFrequencyIndex + 1
+    scrollToFrequency(page: pageToShow)
+  }
+  
+  private func scrollToFrequency(page: Int) {
+    let offset = CGPoint(x: frequencyScrollView.frame.width * CGFloat(page), y: 0.0)
+    frequencyScrollView.setContentOffset(offset, animated: true)
+  }
+  
   @IBAction func onCreateTapped(_ sender: UIButton) {
     if let description = descriptionTextField.text, !description.isEmpty {
       let frequency = frequencyDataSource[selectedFrequencyIndex]
@@ -68,12 +87,19 @@ class CreateTaskViewController: UIViewController {
   @IBAction func onCancelTapped(_ sender: Any) {
     dismiss(animated: true, completion: nil)
   }
-  
 }
 
 extension CreateTaskViewController: UIScrollViewDelegate {
   
   func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    displayFrequencyArrows()
+  }
+  
+  func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+    displayFrequencyArrows()
+  }
+  
+  fileprivate func displayFrequencyArrows() {
     leftArrowImageView.isHidden = selectedFrequencyIndex == 0
     rightArrowImageView.isHidden = selectedFrequencyIndex == frequencyDataSource.count - 1
   }

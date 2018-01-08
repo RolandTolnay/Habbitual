@@ -243,7 +243,7 @@
         <scene sceneID="Bwp-4s-DvT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bQE-Cx-BoN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Today" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Today" image="today" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nj6-3m-QC8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -280,7 +280,7 @@
         <scene sceneID="Gnz-66-Ki9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VK5-ar-E3Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="History" image="history" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6qO-py-irf">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -297,9 +297,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="history" width="24" height="25"/>
         <image name="leftArrow" width="66" height="66"/>
         <image name="rightArrow" width="66" height="66"/>
-        <image name="second" width="30" height="30"/>
+        <image name="today" width="24" height="24"/>
     </resources>
 </document>

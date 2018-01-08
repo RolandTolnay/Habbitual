@@ -15,8 +15,10 @@ func appReducer(action: Action, state: AppState?) -> AppState {
   switch action {
     case let createAction as CreateTaskAction:
       let task = Task(name: createAction.description, frequency: createAction.frequency)
-      state.tasks.append(task)
-      state.todaysTasks = generateTodaysTasks(from: state.tasks)
+      if !state.tasks.contains(task) {
+        state.tasks.append(task)
+        state.todaysTasks = generateTodaysTasks(from: state.tasks)
+      }
     case let completeAction as CompleteTaskAction:
         state = completeTaskReducer(action: completeAction, state: state)
     case _ as UpdateTodaysTasksAction:

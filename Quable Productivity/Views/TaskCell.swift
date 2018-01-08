@@ -12,6 +12,8 @@ import ChameleonFramework
 class TaskCell: UITableViewCell {
   
   @IBOutlet weak var descriptionLabel: UILabel!
+  @IBOutlet weak var labelToTopConstraint: NSLayoutConstraint!
+  @IBOutlet weak var labelToBottomConstraint: NSLayoutConstraint!
   
   static var nib: UINib {
     return UINib(nibName: String(describing: self), bundle: nil)
@@ -23,7 +25,10 @@ class TaskCell: UITableViewCell {
   
   func setupWith(description: String, frequency: Frequency, status: TaskStatus = .pending) {
     if status == .completed {
-       self.backgroundColor = UIColor.flatGreenDark
+      self.backgroundColor = UIColor.flatGreenDark
+      descriptionLabel.font = UIFont(name: descriptionLabel.font.fontName, size: 16)
+      labelToTopConstraint.constant = 5
+      labelToBottomConstraint.constant = 5
     } else {
       switch frequency {
         case .daily:
@@ -37,6 +42,9 @@ class TaskCell: UITableViewCell {
         case .abstinance:
           self.backgroundColor = UIColor.flatWatermelon
       }
+      labelToTopConstraint.constant = 19.5
+      labelToBottomConstraint.constant = 19.5
+      descriptionLabel.font = UIFont(name: descriptionLabel.font.fontName, size: 24)
     }
     
     descriptionLabel.text = description

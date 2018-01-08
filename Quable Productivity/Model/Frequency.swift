@@ -11,10 +11,10 @@ import Foundation
 enum Frequency: Int, Codable {
   
   case daily = 0
-  case fewDays = 1
-  case weekly = 2
-  case sometime = 3
-  case abstinance = 4
+  case abstinance
+  case fewDays
+  case weekly
+  case sometime
   
   var stringValue: String {
     switch self {

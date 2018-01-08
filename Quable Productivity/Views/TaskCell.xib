@@ -28,12 +28,14 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="8Ag-Sl-BED" firstAttribute="leading" secondItem="ilA-6P-zcn" secondAttribute="leadingMargin" constant="12" id="BzH-d5-Lwx"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="8Ag-Sl-BED" secondAttribute="bottom" constant="19.5" id="Eme-cL-ucg"/>
-                    <constraint firstItem="8Ag-Sl-BED" firstAttribute="top" secondItem="ilA-6P-zcn" secondAttribute="topMargin" constant="19.5" id="u66-n6-did"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8Ag-Sl-BED" secondAttribute="bottom" priority="999" constant="19.5" id="Eme-cL-ucg"/>
+                    <constraint firstItem="8Ag-Sl-BED" firstAttribute="top" secondItem="ilA-6P-zcn" secondAttribute="topMargin" priority="999" constant="19.5" id="u66-n6-did"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="descriptionLabel" destination="8Ag-Sl-BED" id="XSZ-mF-qQt"/>
+                <outlet property="labelToBottomConstraint" destination="Eme-cL-ucg" id="ord-yQ-MBu"/>
+                <outlet property="labelToTopConstraint" destination="u66-n6-did" id="c5D-5B-jaA"/>
             </connections>
             <point key="canvasLocation" x="-11" y="4"/>
         </tableViewCell>

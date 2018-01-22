@@ -117,7 +117,7 @@ struct TaskSection: Equatable, Comparable {
   }
   
   static func <(lhs: TaskSection, rhs: TaskSection) -> Bool {
-    return lhs.date < rhs.date
+    return lhs.date > rhs.date
   }
 }
 

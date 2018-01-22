@@ -52,7 +52,7 @@
 		6D0D60236E3FBA47E04BDE29 /* Pods-Quable ProductivityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable ProductivityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quable ProductivityTests/Pods-Quable ProductivityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DB94634099B7D4331E3D91D /* Pods-Quable Productivity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable Productivity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quable Productivity/Pods-Quable Productivity.debug.xcconfig"; sourceTree = "<group>"; };
 		A7D31A9F08CF0F143297FC68 /* Pods_Quable_ProductivityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quable_ProductivityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF003A251FFCDBF0007DF4F0 /* Quable Productivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quable Productivity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF003A251FFCDBF0007DF4F0 /* Habbitual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habbitual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF003A281FFCDBF0007DF4F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF003A2A1FFCDBF0007DF4F0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		AF003A2C1FFCDBF0007DF4F0 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		AF003A311FFCDBF0007DF4F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF003A341FFCDBF0007DF4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF003A361FFCDBF0007DF4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF003A3B1FFCDBF0007DF4F0 /* Quable ProductivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quable ProductivityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF003A3B1FFCDBF0007DF4F0 /* Quable ProductivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Quable ProductivityTests.xctest"; path = HabbitualTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF003A3F1FFCDBF0007DF4F0 /* Quable_ProductivityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quable_ProductivityTests.swift; sourceTree = "<group>"; };
 		AF003A411FFCDBF0007DF4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF003A4F1FFCE1CE007DF4F0 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 		AF003A1C1FFCDBF0007DF4F0 = {
 			isa = PBXGroup;
 			children = (
-				AF003A271FFCDBF0007DF4F0 /* Quable Productivity */,
-				AF003A3E1FFCDBF0007DF4F0 /* Quable ProductivityTests */,
+				AF003A271FFCDBF0007DF4F0 /* Habbitual */,
+				AF003A3E1FFCDBF0007DF4F0 /* Habbitual Tests */,
 				AF003A261FFCDBF0007DF4F0 /* Products */,
 				B4C088346A191DDF24FA67DB /* Pods */,
 				BE157D62E6F08064F3579618 /* Frameworks */,
@@ -110,13 +110,13 @@
 		AF003A261FFCDBF0007DF4F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF003A251FFCDBF0007DF4F0 /* Quable Productivity.app */,
+				AF003A251FFCDBF0007DF4F0 /* Habbitual.app */,
 				AF003A3B1FFCDBF0007DF4F0 /* Quable ProductivityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AF003A271FFCDBF0007DF4F0 /* Quable Productivity */ = {
+		AF003A271FFCDBF0007DF4F0 /* Habbitual */ = {
 			isa = PBXGroup;
 			children = (
 				AF003A281FFCDBF0007DF4F0 /* AppDelegate.swift */,
@@ -131,16 +131,17 @@
 				AF003A331FFCDBF0007DF4F0 /* LaunchScreen.storyboard */,
 				AF003A361FFCDBF0007DF4F0 /* Info.plist */,
 			);
-			path = "Quable Productivity";
+			path = Habbitual;
 			sourceTree = "<group>";
 		};
-		AF003A3E1FFCDBF0007DF4F0 /* Quable ProductivityTests */ = {
+		AF003A3E1FFCDBF0007DF4F0 /* Habbitual Tests */ = {
 			isa = PBXGroup;
 			children = (
 				AF003A3F1FFCDBF0007DF4F0 /* Quable_ProductivityTests.swift */,
 				AF003A411FFCDBF0007DF4F0 /* Info.plist */,
 			);
-			path = "Quable ProductivityTests";
+			name = "Habbitual Tests";
+			path = HabbitualTests;
 			sourceTree = "<group>";
 		};
 		AF003A4A1FFCE0F3007DF4F0 /* View Controllers */ = {
@@ -220,9 +221,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF003A241FFCDBF0007DF4F0 /* Quable Productivity */ = {
+		AF003A241FFCDBF0007DF4F0 /* Habbitual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF003A441FFCDBF0007DF4F0 /* Build configuration list for PBXNativeTarget "Quable Productivity" */;
+			buildConfigurationList = AF003A441FFCDBF0007DF4F0 /* Build configuration list for PBXNativeTarget "Habbitual" */;
 			buildPhases = (
 				9B5752AED542EBA2A423ED8F /* [CP] Check Pods Manifest.lock */,
 				AF003A211FFCDBF0007DF4F0 /* Sources */,
@@ -235,14 +236,14 @@
 			);
 			dependencies = (
 			);
-			name = "Quable Productivity";
+			name = Habbitual;
 			productName = "Quable Productivity";
-			productReference = AF003A251FFCDBF0007DF4F0 /* Quable Productivity.app */;
+			productReference = AF003A251FFCDBF0007DF4F0 /* Habbitual.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AF003A3A1FFCDBF0007DF4F0 /* Quable ProductivityTests */ = {
+		AF003A3A1FFCDBF0007DF4F0 /* HabbitualTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF003A471FFCDBF0007DF4F0 /* Build configuration list for PBXNativeTarget "Quable ProductivityTests" */;
+			buildConfigurationList = AF003A471FFCDBF0007DF4F0 /* Build configuration list for PBXNativeTarget "HabbitualTests" */;
 			buildPhases = (
 				0BC5E51B132B7C8AD315965D /* [CP] Check Pods Manifest.lock */,
 				AF003A371FFCDBF0007DF4F0 /* Sources */,
@@ -256,7 +257,7 @@
 			dependencies = (
 				AF003A3D1FFCDBF0007DF4F0 /* PBXTargetDependency */,
 			);
-			name = "Quable ProductivityTests";
+			name = HabbitualTests;
 			productName = "Quable ProductivityTests";
 			productReference = AF003A3B1FFCDBF0007DF4F0 /* Quable ProductivityTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -282,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AF003A201FFCDBF0007DF4F0 /* Build configuration list for PBXProject "Quable Productivity" */;
+			buildConfigurationList = AF003A201FFCDBF0007DF4F0 /* Build configuration list for PBXProject "Habbitual" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -295,8 +296,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF003A241FFCDBF0007DF4F0 /* Quable Productivity */,
-				AF003A3A1FFCDBF0007DF4F0 /* Quable ProductivityTests */,
+				AF003A241FFCDBF0007DF4F0 /* Habbitual */,
+				AF003A3A1FFCDBF0007DF4F0 /* HabbitualTests */,
 			);
 		};
 /* End PBXProject section */
@@ -467,7 +468,7 @@
 /* Begin PBXTargetDependency section */
 		AF003A3D1FFCDBF0007DF4F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AF003A241FFCDBF0007DF4F0 /* Quable Productivity */;
+			target = AF003A241FFCDBF0007DF4F0 /* Habbitual */;
 			targetProxy = AF003A3C1FFCDBF0007DF4F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -605,11 +606,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JYW3B323JJ;
-				INFOPLIST_FILE = "Quable Productivity/Info.plist";
+				DEVELOPMENT_TEAM = 32MK5V2NGT;
+				INFOPLIST_FILE = "$(SRCROOT)/Habbitual/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.rolandtolnay.Quable-Productivity";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rolandtolnay.Habbitual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -622,11 +623,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JYW3B323JJ;
-				INFOPLIST_FILE = "Quable Productivity/Info.plist";
+				DEVELOPMENT_TEAM = 32MK5V2NGT;
+				INFOPLIST_FILE = "$(SRCROOT)/Habbitual/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.rolandtolnay.Quable-Productivity";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rolandtolnay.Habbitual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -647,7 +648,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quable Productivity.app/Quable Productivity";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Habbitual.app/Habbitual";
 			};
 			name = Debug;
 		};
@@ -665,14 +666,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quable Productivity.app/Quable Productivity";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Habbitual.app/Habbitual";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AF003A201FFCDBF0007DF4F0 /* Build configuration list for PBXProject "Quable Productivity" */ = {
+		AF003A201FFCDBF0007DF4F0 /* Build configuration list for PBXProject "Habbitual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF003A421FFCDBF0007DF4F0 /* Debug */,
@@ -681,7 +682,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF003A441FFCDBF0007DF4F0 /* Build configuration list for PBXNativeTarget "Quable Productivity" */ = {
+		AF003A441FFCDBF0007DF4F0 /* Build configuration list for PBXNativeTarget "Habbitual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF003A451FFCDBF0007DF4F0 /* Debug */,
@@ -690,7 +691,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF003A471FFCDBF0007DF4F0 /* Build configuration list for PBXNativeTarget "Quable ProductivityTests" */ = {
+		AF003A471FFCDBF0007DF4F0 /* Build configuration list for PBXNativeTarget "HabbitualTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF003A481FFCDBF0007DF4F0 /* Debug */,

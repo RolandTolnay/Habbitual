@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2853D9FD87637D69EC7149FC /* Pods_Quable_ProductivityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D31A9F08CF0F143297FC68 /* Pods_Quable_ProductivityTests.framework */; };
+		578D3E45928E68BD12081B0A /* Pods_HabbitualTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEEE94F3007D43F5BA9C060 /* Pods_HabbitualTests.framework */; };
 		5B978AAE12C95C4238039494 /* Pods_Quable_Productivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA185122AA2B1FABAB1503AB /* Pods_Quable_Productivity.framework */; };
 		AF003A291FFCDBF0007DF4F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF003A281FFCDBF0007DF4F0 /* AppDelegate.swift */; };
 		AF003A2B1FFCDBF0007DF4F0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF003A2A1FFCDBF0007DF4F0 /* TodayViewController.swift */; };
@@ -34,6 +35,7 @@
 		AF003A671FFD1526007DF4F0 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF003A651FFD1526007DF4F0 /* TaskCell.swift */; };
 		AF8B1AE91FFE0D9100B229E9 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8B1AE81FFE0D9100B229E9 /* TaskCell.xib */; };
 		AF8B1AEB1FFE5D5800B229E9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B1AEA1FFE5D5800B229E9 /* Date.swift */; };
+		CA40000E957D75CE70219340 /* Pods_Habbitual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7DFFF20D4E4641C57BAA80 /* Pods_Habbitual.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E7DFFF20D4E4641C57BAA80 /* Pods_Habbitual.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habbitual.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F841DED02BE5F711575972 /* Pods-Quable ProductivityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable ProductivityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quable ProductivityTests/Pods-Quable ProductivityTests.release.xcconfig"; sourceTree = "<group>"; };
 		633F03C3AA2843FE509533FA /* Pods-Quable Productivity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable Productivity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quable Productivity/Pods-Quable Productivity.release.xcconfig"; sourceTree = "<group>"; };
 		6D0D60236E3FBA47E04BDE29 /* Pods-Quable ProductivityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable ProductivityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quable ProductivityTests/Pods-Quable ProductivityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87FEA64BDC7A044490A07520 /* Pods-HabbitualTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabbitualTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabbitualTests/Pods-HabbitualTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DB94634099B7D4331E3D91D /* Pods-Quable Productivity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable Productivity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quable Productivity/Pods-Quable Productivity.debug.xcconfig"; sourceTree = "<group>"; };
+		9298FF381EBC67853834CDDD /* Pods-Habbitual.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habbitual.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Habbitual/Pods-Habbitual.debug.xcconfig"; sourceTree = "<group>"; };
 		A7D31A9F08CF0F143297FC68 /* Pods_Quable_ProductivityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quable_ProductivityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF003A251FFCDBF0007DF4F0 /* Habbitual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habbitual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF003A281FFCDBF0007DF4F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +78,10 @@
 		AF003A651FFD1526007DF4F0 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		AF8B1AE81FFE0D9100B229E9 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
 		AF8B1AEA1FFE5D5800B229E9 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		BC85FAC133AED1D0C40EC40B /* Pods-HabbitualTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabbitualTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HabbitualTests/Pods-HabbitualTests.release.xcconfig"; sourceTree = "<group>"; };
+		DCEEE94F3007D43F5BA9C060 /* Pods_HabbitualTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabbitualTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA185122AA2B1FABAB1503AB /* Pods_Quable_Productivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quable_Productivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE8F329183039F0BF063AA7 /* Pods-Habbitual.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habbitual.release.xcconfig"; path = "Pods/Target Support Files/Pods-Habbitual/Pods-Habbitual.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B978AAE12C95C4238039494 /* Pods_Quable_Productivity.framework in Frameworks */,
+				CA40000E957D75CE70219340 /* Pods_Habbitual.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2853D9FD87637D69EC7149FC /* Pods_Quable_ProductivityTests.framework in Frameworks */,
+				578D3E45928E68BD12081B0A /* Pods_HabbitualTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +215,10 @@
 				633F03C3AA2843FE509533FA /* Pods-Quable Productivity.release.xcconfig */,
 				6D0D60236E3FBA47E04BDE29 /* Pods-Quable ProductivityTests.debug.xcconfig */,
 				45F841DED02BE5F711575972 /* Pods-Quable ProductivityTests.release.xcconfig */,
+				9298FF381EBC67853834CDDD /* Pods-Habbitual.debug.xcconfig */,
+				FFE8F329183039F0BF063AA7 /* Pods-Habbitual.release.xcconfig */,
+				87FEA64BDC7A044490A07520 /* Pods-HabbitualTests.debug.xcconfig */,
+				BC85FAC133AED1D0C40EC40B /* Pods-HabbitualTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -214,6 +228,8 @@
 			children = (
 				FA185122AA2B1FABAB1503AB /* Pods_Quable_Productivity.framework */,
 				A7D31A9F08CF0F143297FC68 /* Pods_Quable_ProductivityTests.framework */,
+				0E7DFFF20D4E4641C57BAA80 /* Pods_Habbitual.framework */,
+				DCEEE94F3007D43F5BA9C060 /* Pods_HabbitualTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -230,7 +246,6 @@
 				AF003A221FFCDBF0007DF4F0 /* Frameworks */,
 				AF003A231FFCDBF0007DF4F0 /* Resources */,
 				28BB48F9DD5AC0E1E8A47BE6 /* [CP] Embed Pods Frameworks */,
-				0A4D3A3DB76E047073C5C6B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,8 +264,6 @@
 				AF003A371FFCDBF0007DF4F0 /* Sources */,
 				AF003A381FFCDBF0007DF4F0 /* Frameworks */,
 				AF003A391FFCDBF0007DF4F0 /* Resources */,
-				97AC4DC9EF2A8501A3EFAAFA /* [CP] Embed Pods Frameworks */,
-				CDA48464305E3F637F120F53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,21 +337,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A4D3A3DB76E047073C5C6B5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quable Productivity/Pods-Quable Productivity-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		0BC5E51B132B7C8AD315965D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,7 +348,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Quable ProductivityTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HabbitualTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -363,7 +361,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Quable Productivity/Pods-Quable Productivity-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Habbitual/Pods-Habbitual-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
 			);
@@ -374,22 +372,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quable Productivity/Pods-Quable Productivity-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		97AC4DC9EF2A8501A3EFAAFA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quable ProductivityTests/Pods-Quable ProductivityTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Habbitual/Pods-Habbitual-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9B5752AED542EBA2A423ED8F /* [CP] Check Pods Manifest.lock */ = {
@@ -403,26 +386,11 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Quable Productivity-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Habbitual-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CDA48464305E3F637F120F53 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quable ProductivityTests/Pods-Quable ProductivityTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -602,7 +570,7 @@
 		};
 		AF003A451FFCDBF0007DF4F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DB94634099B7D4331E3D91D /* Pods-Quable Productivity.debug.xcconfig */;
+			baseConfigurationReference = 9298FF381EBC67853834CDDD /* Pods-Habbitual.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -619,7 +587,7 @@
 		};
 		AF003A461FFCDBF0007DF4F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 633F03C3AA2843FE509533FA /* Pods-Quable Productivity.release.xcconfig */;
+			baseConfigurationReference = FFE8F329183039F0BF063AA7 /* Pods-Habbitual.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -636,7 +604,7 @@
 		};
 		AF003A481FFCDBF0007DF4F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D0D60236E3FBA47E04BDE29 /* Pods-Quable ProductivityTests.debug.xcconfig */;
+			baseConfigurationReference = 87FEA64BDC7A044490A07520 /* Pods-HabbitualTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -654,7 +622,7 @@
 		};
 		AF003A491FFCDBF0007DF4F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45F841DED02BE5F711575972 /* Pods-Quable ProductivityTests.release.xcconfig */;
+			baseConfigurationReference = BC85FAC133AED1D0C40EC40B /* Pods-HabbitualTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

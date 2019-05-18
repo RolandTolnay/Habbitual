@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Quable Productivity' do
+target 'Habbitual' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
@@ -9,7 +9,7 @@ target 'Quable Productivity' do
   pod 'ReSwift'
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 
-  target 'Quable ProductivityTests' do
+  target 'HabbitualTests' do
     inherit! :search_paths
     # Pods for testing
   end
